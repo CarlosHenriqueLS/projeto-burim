@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --titulo: 'Ubuntu', sans-serif;
+    --conteudo: 'Dosis', sans-serif;
+}
+
+
+html, body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #9fc2c6;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--titulo);
+    background-image: linear-gradient(to bottom, #0D5C63, #29494d);
+    width: 100%;
+    height: 100px;
+}
+
+header h1 {
+    color: #E7ECEF;
+    margin-right: 200px;
+    width: 300px;
+    text-shadow: 3px 2px 3px black;
+}
+
+header img{
+    width: 50px;
+    padding: 5px;
+}
+
+nav {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+nav a{
+    color: #E7ECEF;
+    text-decoration: none;
+    font-size:1.5em;
+    margin-left: 50px;
+    font-weight: bolder;
+    text-shadow: 3px 2px 3px black;
+    padding: 2px;
+}
+
+nav a:hover{
+    background-color: #0697a7;
+}
+
+div#container {
+    background-color: grey;
+    background-image: url(../imagens/qsmp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.468);
+    padding-top: 500px;
+    position: relative;
+}
+
+div#cont {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 10vw;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+div#cont p {
+    letter-spacing: 15px;
+    text-shadow: 3px 2px 3px black;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, white 70%, #78CDD7);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main h1 {
+    padding: 10px;
+    font-variant: small-caps;
+    font-family: var(--titulo);
+    font-size: 2em;
+    color: #0a454b;
+    box-shadow: 0px 3px 0px rgb(4, 111, 119);
+}
+
+main h2 {
+    font-family: var(--conteudo);
+    padding: 15px;
+    color: #0e2424;
+    text-shadow: 1px 1px 0px black;
+    text-align: left;
+}
+
+main p {
+    max-width: 700px;
+    text-align: justify;
+    font-family: var(--conteudo);
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#enigma {
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.352);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 700px;
+}
+
+div#video {
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+    background-color: #0a454b;
+    margin: 0px -20px 30px -20px;
+    border-radius: 3px;
+}
+
+div#video > iframe {
+    position: absolute;
+    top: 5% ;
+    left: 5%;
+    width: 90% ;
+    height: 90% ;
+    border-radius: 30px;
+}
+
+section#nba {
+    /*background-color: #0a454b;
+    padding: 0px 100px 10px 100px;
+    margin: 0px ;
+    border-radius: 10px;
+    color: white;*/
+    padding: 20px;
+    background-color: #0a454b;
+    margin: 0px -20px -30px -20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+section#nba h1{
+    color: white;
+}
+
+section#nba h2 {
+    font-style: italic;
+    color: white;
+}
+
+section#nba h3 {
+    font-family: var(--titulo);
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+section#nba ul {
+    columns: 2;
+    color: white;
+    list-style-position: inside;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: var(--conteudo);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    background-color: #0d5c635d;
+    padding: 3px;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+a:hover {
+    background-color: #0a454b;
+    text-decoration: underline;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: #041c1e;
+    font-family: var(--titulo);
+    padding: 5px;
+    color: white;
+    margin: 0px;
+    margin-top:15px;
+}
+
+footer a {
+    color: white;
+}
